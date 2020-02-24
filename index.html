@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="image_src" href="img/main3.jpg" />
+    <link rel="stylesheet" href="css/common.css">
+    <title>OMCDOC 출석체크</title>
+</head>
+<body>
+    <header>
+        <h1>OMCDOC 출석체크</h1>
+    </header>
+    <div class="header-padding"></div>
+    <section class="choose area">
+        <select name="" id="">
+            <option>목장을 선택하세요</option>
+            <option>강정규 목장</option>
+            <option>강희준 목장</option>
+            <option>김민정 목장</option>
+            <option>김현수 목장</option>
+            <option>안예슬 목장</option>
+            <option>유보미 목장</option>
+            <option>이규혁 목장</option>
+            <option>이민수 목장</option>
+            <option>이은창 목장</option>
+            <option>전경근 목장</option>
+            <option>정혜빈 목장</option>
+            <option>지성민 목장</option>
+            <option>새가족 목장</option>
+            <!-- 목장명은 개발로 DB에서 불러오게끔, <option></option>이 반복됩니다 -->
+        </select>
+    </section>
+    <section class="intro area hidden">
+        <p class="area-top">2월 1주차 (2월 2일)</p>
+        <div class="text-top">
+            리더 / 헬퍼님 :) <br>오늘 하루도 수고했어요<br>토닥토닥
+        </div>
+    </section>
+    <section class="tab area">
+        <button type="button" class="on">출석체크</button>
+        <button type="button">목원수정</button>
+    </section>
+    <section class="check area">
+        <p class="area-top">2월 1주차 (2월 2일)</p>
+        <ul>
+            <li><input type="checkbox">이웅원</li>
+            <li><input type="checkbox">이정은</li>
+            <li><input type="checkbox">정혜빈</li>
+            <li><input type="checkbox">윤주혜</li>
+            <li><input type="checkbox">이성경</li>
+            <li><input type="checkbox">김윤아</li>
+            <li><input type="checkbox">조운용</li>
+            <li><input type="checkbox">유보미</li>
+            <!-- 목원 이름은 개발로 DB에서 불러오게끔, <li></li>가 반복됩니다 -->
+        </ul>
+        <textarea name="" id="" cols="30" rows="10" placeholder="심방 내용을 입력해주세요"></textarea>
+        <button type="button" class="fin-btn">저장</button>
+    </section>
+    <section class="modify area">
+        <p class="area-top">
+            <button type="button">목원추가 <i class="i i-plus"></i></button>
+            <p><input type="text" placeholder="이름을 입력하세요"><button type="button">추가</button></p>
+        </p>
+        <ul>
+            <li>이웅원<button type="button">삭제</button></li>
+            <li>이정은<button type="button">삭제</button></li>
+            <li>정혜빈<button type="button">삭제</button></li>
+            <li>윤주혜<button type="button">삭제</button></li>
+            <li>이성경<button type="button">삭제</button></li>
+            <li>김윤아<button type="button">삭제</button></li>
+            <li>조운용<button type="button">삭제</button></li>
+            <li>유보미<button type="button">삭제</button></li>
+            <!-- 삭제 시 DB 및 check-area에도 반영 -->
+        </ul>
+    </section> 
+</body>
+</html>
