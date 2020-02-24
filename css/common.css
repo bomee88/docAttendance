@@ -150,21 +150,21 @@ select::-ms-expand {
 
 ::-webkit-input-placeholder { /* WebKit browsers */
     color:    #ccc;
-    font-size: inherit;
+    font-size: 15px;
     }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
    color:    #ccc;
    opacity:  1;
-   font-size: inherit;
+   font-size: 15px;
    }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
    color:    #ccc;
    opacity:  1;
-   font-size: inherit;
+   font-size: 15px;
    }
 input:-ms-input-placeholder { /* Internet Explorer 10+ */
    color:#ccc;
-   font-size: inherit;
+   font-size: 15px;
    }
 
 
