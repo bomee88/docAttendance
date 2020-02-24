@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="image_src" href="img/meta-img.jpg" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/common.css">
+    <title>OMCDOC 출석체크</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="w100 area">
+            <i class="material-icons" onclick="location.href='index.html'">arrow_back_ios</i>
+            <h1>OMCDOC 출석체크</h1>
+            <i class="material-icons">brightness_6</i>
+        </div>
+    </header>
+    <div class="header-padding"></div>
+    <section class="choose">
+        <div class="w100 area">
+            <select name="" id="">
+                <option>목장을 선택하세요</option>
+                <option>강정규 목장</option>
+                <option>강희준 목장</option>
+                <option>김민정 목장</option>
+                <option>김현수 목장</option>
+                <option>안예슬 목장</option>
+                <option>유보미 목장</option>
+                <option>이규혁 목장</option>
+                <option>이민수 목장</option>
+                <option>이은창 목장</option>
+                <option>전경근 목장</option>
+                <option selected>정혜빈 목장</option>
+                <option>지성민 목장</option>
+                <option>새가족 목장</option>
+                <!-- 목장명은 개발로 DB에서 불러오게끔, <option></option>이 반복됩니다 -->
+            </select>
+        </div>
+    </section>
+    <section class="tab">
+        <div class="area w100">
+            <button type="button" class="on" onclick="location.href='attendance.html'">출석체크</button>
+            <button type="button" onclick="location.href='modify.html'">목원수정</button>
+        </div>
+    </section>
+    <section class="check area w100">
+        <p class="area-top">2월 1주차 (2월 2일)</p>
+        <div class="btn-area">
+            <button type="button">이웅원</button>
+            <button type="button">이정은</button>
+            <button type="button">정혜빈</button>
+            <button type="button">윤주혜</button>
+            <button type="button">이성경</button>
+            <button type="button">김윤아</button>
+            <button type="button">조운용</button>
+            <button type="button">유보미</button>
+        </div>
+        <!-- 목원 이름은 개발로 DB에서 불러오게끔, <button></button>가 반복됩니다 -->
+
+        <textarea name="" id="" cols="30" rows="10" placeholder="심방 내용을 입력해주세요"></textarea>
+        <button type="button" class="fin-btn">저장</button>
+    </section>
+<script src="js/common.js"></script>
+</body>
+</html>

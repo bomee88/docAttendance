@@ -72,13 +72,9 @@ input[type='password'],input[type='button'],input[type='text'],input[type='email
 	border-radius: 3px;
 	padding: 0 10px;
 	height: 40px;
-	transition:0.2s all;
 	line-height: 1.2em;
 }
 input[type='checkbox']{
-	-webkit-appearance: none;
-	 -moz-appearance: none; 
-	 appearance: none;
 	 width: 20px; 
 	 height: 20px; 
 	 border: 1px solid #aeaeae; 
@@ -86,9 +82,7 @@ input[type='checkbox']{
 	 border-radius: 1px; 
 	 display: inline-block;
 	}
-input[type='checkbox']:checked{
-	background: url(http://www.duranno.com/qt/m/img/checked.png) no-repeat 50% 50%; background-color: #fff;
-}
+
 input[type='radio']{
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -194,12 +188,14 @@ body{
 	overflow-y: scroll;
 	overflow-x: hidden;
 	-webkit-overflow-scrolling:touch;
+	background-color: #fff;
 }
 
 @media screen and (max-width: 768px){
 	body,html,ul,li,ol,li,dl,dt,dd,*{letter-spacing: -1px;}
 }
 
+i.material-icons{display: inline-block; vertical-align: middle;}
 /* Css Reset End */
 
 
@@ -220,7 +216,7 @@ body{
 .text-right{text-align: right;}
 .text-left{text-align: left;}
 .text-center{text-align: center;}
-.w100{width: 100%; max-width: 768px; box-sizing: border-box; margin: 0 auto; padding: 0;}
+.w100{width: 100%; max-width: 540px; box-sizing: border-box; margin: 0 auto; padding: 0;}
 .box{padding-left: 20px; padding-right: 20px; box-sizing: border-box;}
 
 .dis-bl{display: block;}
@@ -262,21 +258,37 @@ body{
 /* Personal End */
 
 
-
-
-header{width: 100%; text-align: left;  position: fixed; left: 0; z-index: 100; box-sizing: border-box; background: #fff; text-align: center; font-size: 15px; color: #222; padding: 20px 0; box-shadow: 0 3px 6px rgba(0,0,0,0.13); font-weight: bold;}
-h1{font-size: inherit; font-weight: inherit;}
-.header-padding{padding-top: 59px;}
-.choose{width: 100%; height: 60px; line-height: 60px; background: linear-gradient(-23deg, #C1A7FF, #A0AEFF); text-align: center;}
-.choose select{all: unset; width: 100%;  color: #fff; background-image: url(http://www.duranno.com/company2020/img/select-w.svg); background-repeat: no-repeat; background-position: 100% 50%; box-sizing: border-box; line-height: 1; font-size: 15px;}
-
 .area{width: 100%; padding: 0 20px; box-sizing: border-box;}
 
-.intro{text-align: center; margin: 20px 0;}
-.intro .area-top{margin-bottom: 20px; font-size: 15px; color: #505050;}
-.intro .text-top{background: #f2f2f2; border-radius: 5px; padding: 20px; box-sizing: border-box; font-size: 15px; color: #505050; line-height: 1.63em;}
 
-.tab{display: flex; justify-content: center; align-items: center; padding: 0}
-.tab button{all: unset; font-size: 15px; color: #999; border-bottom: 1px solid #aaa; width: 50%; padding: 15px 20px 13px; text-align: center; box-sizing: border-box;}
+.header{width: 100%; text-align: left;  position: fixed; left: 0; z-index: 100; box-sizing: border-box; background: #fff; text-align: center; font-size: 15px; color: #222; padding: 20px 0; box-shadow: 0 3px 6px rgba(0,0,0,0.13); }
+.header .w100{display: flex; justify-content: space-between; align-items: center; font-weight: bold; }
+.header i{font-weight: normal;}
+.header i:nth-child(3){opacity: 0;}
+h1{font-size: inherit; font-weight: inherit; display: inline-block;}
+.header-padding{padding-top: 59px;}
+.choose{width: 100%; height: 60px; line-height: 60px; background: linear-gradient(-23deg, #C1A7FF, #A0AEFF); text-align: center;}
+.choose select{width: 100%;  color: #fff; background-image: url(http://www.duranno.com/company2020/img/select-w.svg); background-repeat: no-repeat; background-position: 100% 50%; box-sizing: border-box; line-height: 1; font-size: 15px; background-color: transparent; background-size: initial; border-color: transparent}
+.choose select option{color: #505050;;}
+
+
+.intro{margin: 20px 0;}
+.area-top{margin-bottom: 20px; font-size: 15px; color: #505050; text-align: center;}
+.text-top{background: rgba(200,200,200,0.2); border-radius: 5px; padding: 20px; box-sizing: border-box; font-size: 15px; color: #505050; line-height: 1.63em; text-align: center;}
+
+.tab{border-bottom: 1px solid #aaa;}
+.tab .area{display: flex; justify-content: center; align-items: center; padding: 0; }
+.tab button{all: unset; font-size: 15px; color: #999; border-bottom: 1px solid #aaa; width: 50%; padding: 15px 20px 13px; text-align: center; box-sizing: border-box; position: relative; bottom: -1px;}
 .tab button.on{border-color: #333; color: #333;}
+
+.check{margin: 20px auto;}
+.btn-area button{display: block; width: 100%; font-size: 15px; line-height: 45px; border-radius:23px; height: 45px; margin-bottom: 10px; background: #fff; border: 1px solid #ccc; box-sizing: border-box; color: #707070; transition: 0.2s all; cursor: pointer;}
+.btn-area button.on{background: linear-gradient(-23deg, #C1A7FF,#A0AEFF); color: #fff; }
+
+textarea:hover,
+textarea{all:unset; width: 100%; height: 100px; background: rgba(200,200,200,0.2); border-radius: 5px; padding: 15px 20px; box-sizing: border-box; font-size: 15px; color: #505050; line-height: 1.63em; text-align: left; margin-top: 30px;}
+.fin-btn{width: 100px; border-radius: 23px; height:40px; line-height: 40px; border: 1px solid #ccc; color: #707070; font-size: 14px; letter-spacing: 2px; display: block; margin: 30px auto; transition: 0.2s all;}
+.fin-btn:hover{background: #505050; color: #fff;}
+
+.modify{margin: 20px auto;}
 
