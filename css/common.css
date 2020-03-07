@@ -261,7 +261,7 @@ i.material-icons{display: inline-block; vertical-align: middle;}
 .area{width: 100%; padding: 0 20px; box-sizing: border-box;}
 
 
-.header{width: 100%; text-align: left;  position: fixed; left: 0; z-index: 100; box-sizing: border-box; background: #fff; text-align: center; font-size: 15px; color: #222; padding: 20px 0; box-shadow: 0 3px 6px rgba(0,0,0,0.13); }
+.header{width: 100%; text-align: left;  position: fixed; left: 0; z-index: 100; box-sizing: border-box; background: #fff; text-align: center; font-size: 15px; color: #222; padding: 18px 0; box-shadow: 0 3px 6px rgba(0,0,0,0.13); }
 .header .w100{display: flex; justify-content: space-between; align-items: center; font-weight: bold; }
 .header i{font-weight: normal;}
 .header i:nth-child(3){opacity: 0;}
@@ -292,3 +292,13 @@ textarea{all:unset; width: 100%; height: 100px; background: rgba(200,200,200,0.2
 
 .modify{margin: 20px auto;}
 
+.modify .area-top{text-align: left;}
+.modify .i{width: 12px; height: 12px; background: url(../img/icons.svg) 0 0 no-repeat; display: inline-block; }
+.modify .i.i-add{margin-left: 10px; transition: 0.2s all}
+.modify .i.i-add.on{background-position: -12px 0;}
+.modify .add-section{width: 100%; display: flex; justify-content: space-between; align-items: center; transition: 0.2s all; height: 0; overflow: hidden;}
+.modify .add-section.on{height: 41px;}
+.modify .add-section input{border: 0; border-radius: 0; padding:0; border-bottom: 1px solid #efefef; width: 80%}
+.modify .add-section button,
+.modify .person-list button{text-align: center; background-color: #aaa; color: #fff; font-size: 14px; border-radius: 20px; padding: 4px 15px;}
+.modify .person-list li{display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #efefef; padding: 10px 0;}

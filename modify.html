@@ -47,11 +47,11 @@
     </section>
     <section class="modify">
         <div class="area w100">
-            <p class="area-top">
-                <button type="button">목원추가 <i class="i i-plus"></i></button>
-                <p><input type="text" placeholder="이름을 입력하세요"><button type="button">추가</button></p>
-            </p>
-            <ul>
+            <div class="area-top">
+                <button type="button" class="show-add">목원추가 <i class="i i-add"></i></button>
+                <p class="add-section hidden"><input type="text" placeholder="이름을 입력하세요"><button type="button">추가</button></p>
+            </div>
+            <ul class="person-list">
                 <li>이웅원<button type="button">삭제</button></li>
                 <li>이정은<button type="button">삭제</button></li>
                 <li>정혜빈<button type="button">삭제</button></li>
@@ -62,6 +62,7 @@
                 <li>유보미<button type="button">삭제</button></li>
                 <!-- 삭제 시 DB 및 check-area에도 반영 -->
             </ul>
+            <button type="button" class="fin-btn">저장</button>
         </div>
     </section> 
 <script src="js/common.js"></script>
